@@ -19,9 +19,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self.myLabel setTextColor:[UIColor greenColor]];
-    static int color;
-    color = 0;
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,6 +28,7 @@
 }
 
 - (IBAction)swap:(id)sender {
+    
     if (color == 0) {
         [self.myLabel setTextColor:[UIColor redColor]];
         color = 1;
