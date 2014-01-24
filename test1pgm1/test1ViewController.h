@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface test1ViewController : UIViewController
+- (IBAction)swap:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property (nonatomic,retain) UIColor *testColor;
 
 @end
